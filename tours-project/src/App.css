@@ -2,6 +2,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  background: aliceblue;
 }
 .App h2 {
   font-size: 2.5rem;
@@ -17,15 +18,24 @@ main {
 main h2 {
   font-size: 2.5rem;
 }
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .tours {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 60%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   padding: 2rem 1rem;
+  text-transform: capitalize;
+  row-gap: 7vh;
 }
 .title {
   display: flex;
@@ -38,4 +48,51 @@ main h2 {
   height: 0.3rem;
   background: rgb(12, 50, 219);
   margin-top: -2rem;
+}
+
+.single-tour {
+  background: #fff;
+  box-shadow: 10px 10px 10px 7px rgba(156, 142, 142, 0.75);
+  -webkit-box-shadow: 10px 10px 10px 7px rgba(156, 142, 142, 0.75);
+  -moz-box-shadow: 10px 10px 10px 7px rgba(156, 142, 142, 0.75);
+}
+img {
+  width: 100%;
+}
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  color: rgb(8, 93, 93);
+}
+.tour-price {
+  background: rgb(156, 167, 217);
+  padding: 0.2rem 1rem;
+  color: rgb(8, 93, 93);
+}
+footer {
+  padding: 1rem;
+}
+footer p {
+  color: rgb(8, 93, 93);
+  padding: 1rem 1.5rem;
+  text-align: start;
+}
+footer button {
+  border: 1px solid red;
+  color: red;
+  background: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0 1.3rem;
+}
+footer button:hover {
+  transform: scale(1.2);
+}
+.read-more {
+  border: transparent !important;
+  color: rgb(156, 167, 217) !important ;
+}
+.read-more:hover {
+  transform: scale(1) !important;
 }
