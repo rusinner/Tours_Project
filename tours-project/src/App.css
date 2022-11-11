@@ -43,6 +43,14 @@ section {
   align-items: center;
   flex-direction: column;
 }
+.title button {
+  border: 1px solid red;
+  color: red;
+  background: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0 1.3rem;
+}
 .underline {
   width: 8rem;
   height: 0.3rem;
